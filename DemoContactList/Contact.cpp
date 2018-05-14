@@ -31,16 +31,16 @@ ostream& operator << (ostream& s, const Contact& c)
 {
 	int i;
 
-	s << '\t' << c.m_name;		// èçâåæäà name (ñëåä tab).
-								// èçâåæäà èíòåðâàëè
+	s << '\t' << c.m_name;		// Ã¨Ã§Ã¢Ã¥Ã¦Ã¤Ã  name (Ã±Ã«Ã¥Ã¤ tab).
+								// Ã¨Ã§Ã¢Ã¥Ã¦Ã¤Ã  Ã¨Ã­Ã²Ã¥Ã°Ã¢Ã Ã«Ã¨
 	for (i = strlen(c.m_name) + 1; i < 20; i++)
 		s.put(' ');
 
-	s << '\t' << c.m_number;		// èçâåæäà òåëåôîíåí íîìåð
+	s << '\t' << c.m_number;		// Ã¨Ã§Ã¢Ã¥Ã¦Ã¤Ã  Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã¥Ã­ Ã­Ã®Ã¬Ã¥Ã°
 	for (i = strlen(c.m_number) + 1; i < 20; i++)
 		s.put(' ');
 
-	s << '\t' << c.m_adress;			// èçâåæäà àäðåñ
+	s << '\t' << c.m_adress;			// Ã¨Ã§Ã¢Ã¥Ã¦Ã¤Ã  Ã Ã¤Ã°Ã¥Ã±
 	s << '\n';
 
 	return s;
